@@ -1,0 +1,24 @@
+data:
+  yaml_path: dataset.yaml
+export:
+  enabled: true
+  format: tflite
+inference:
+  benchmark: true
+  conf: 0.25
+  model_path: runs/train/exp1/weights/best.pt
+  source: datasets/test_image.jpg
+model:
+  name: yolov8n.pt
+training:
+  batch_size: 16
+  device: 0
+  epochs: 100
+  imgsz: 640
+  lr0: 0.01
+  project_dir: runs/train
+  run_name: exp1
+wandb:
+  enabled: true
+  entity: null
+  project: bottle-cap-detection

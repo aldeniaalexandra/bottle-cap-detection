@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+runs/
+wandb/
+prepared_dataset/
+dataset.yaml
+.env
+.vscode/
+.idea/
